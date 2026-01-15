@@ -209,7 +209,7 @@ version: "3.9"
 
 services:
   nserver1:
-    build: ./backend
+    build: ./server
     container_name: nserver1
     expose:
       - "3000"
@@ -217,7 +217,7 @@ services:
       - nginx_net
 
   nserver2:
-    build: ./backend
+    build: ./server
     container_name: nserver2
     expose:
       - "3000"
